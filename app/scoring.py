@@ -37,8 +37,8 @@ def score(s: AccountSignal) -> GTMResult:
     if s.intent >= 0.7:
         reasons.append("strong buying intent")
 
-    # Confidence reflects signal strength, not deal likelihood.
-    confidence = round(0.4 + 0.6 * sum(normalized.values()) / len(normalized), 2)
+    signal_strength = sum(normalized.values()) / len(normalized)
+    confidence = round(0.4 + 0.6 * signal_strength, 2)
     tier = "hot" if score_value >= 75 else "warm" if score_value >= 50 else "cold"
 
     if confidence < 0.60:
