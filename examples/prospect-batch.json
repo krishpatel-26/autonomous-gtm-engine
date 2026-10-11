@@ -1,0 +1,16 @@
+{
+  "batch_id": "demo_batch_001",
+  "synthetic": true,
+  "prospects": [
+    {
+      "company": "Northstar Components",
+      "role": "Quality Director",
+      "industry": "Manufacturing",
+      "score": 78,
+      "tier": "B",
+      "outreach_status": "draft_pending_approval",
+      "contact_data": "omitted"
+    }
+  ],
+  "note": "Fictional prospect data for local demos only."
+}
